@@ -3,7 +3,7 @@ import rule from '../src/index';
 
 const tester = new TextLintTester();
 
-tester.run('no-hoso-kinshi-yogo', rule, {
+tester.run('inappropriate-words-ja', rule, {
   valid: ['勉強のかたわら掃除をしました。'],
   invalid: [
     {
@@ -12,7 +12,11 @@ tester.run('no-hoso-kinshi-yogo', rule, {
         {
           message: '不適切表現「いざり」が含まれています。',
           line: 1,
-          column: 7
+          column: 7,
+          fix: {
+            range: [6, 9],
+            text: '****'
+          }
         }
       ]
     }

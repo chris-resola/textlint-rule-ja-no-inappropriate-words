@@ -3116,7 +3116,7 @@ const inappropriateWords = [
 ];
 
 const module: TextlintRuleModule = (context) => {
-  const { getSource, report, RuleError, Syntax } = context;
+  const { getSource, report, RuleError, Syntax, fixer } = context;
 
   return {
     async [Syntax.Str](node) {
@@ -3127,14 +3127,13 @@ const module: TextlintRuleModule = (context) => {
         if (!inappropriateWords.includes(surface_form)) {
           return;
         }
-
         const index = word_position - 1;
-
         const ruleError = new RuleError(
-          `不適切表現「${surface_form}」が含まれています。`,
-          { index }
+          `不適切表現「${surface_form}」が含まれています。`, {
+             index: index,
+             fix: fixer.replaceTextRange([index, index + surface_form.length], "****")
+            },
         );
-
         report(node, ruleError);
       });
     }
