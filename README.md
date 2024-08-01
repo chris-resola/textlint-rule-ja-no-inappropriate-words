@@ -1,8 +1,9 @@
-# textlint-rule-ja-no-inappropriate-words
+# textlint-rule-ja-no-inappropriate-words-resola
+
+Fork from: [MosasoM/inappropriate-words-ja](https://github.com/MosasoM/inappropriate-words-ja)
 
 不適切表現をチェックするtextlintルール
 
-参照: [MosasoM/inappropriate-words-ja](https://github.com/MosasoM/inappropriate-words-ja)
 
 ```
 1:1  error    不適切表現「いざり」が含まれています。  ja-no-inappropriate-words
@@ -12,7 +13,7 @@
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install textlint-rule-ja-no-inappropriate-words
+    npm install textlint-rule-ja-no-inappropriate-words-resola
 
 ## Usage
 
@@ -21,7 +22,7 @@ Via `.textlintrc`(Recommended)
 ```json
 {
     "rules": {
-        "ja-no-inappropriate-words": true
+        "ja-no-inappropriate-words-resola": true
     }
 }
 ```

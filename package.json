@@ -1,24 +1,20 @@
 {
-  "name": "textlint-rule-ja-no-inappropriate-words",
-  "version": "2.0.0",
-  "description": "不適切表現をチェックするtextlintルール",
+  "name": "textlint-rule-ja-no-inappropriate-words-resola",
+  "version": "1.0.1",
+  "description": "fork of textlint-rule-ja-no-inappropriate-words",
   "keywords": [
     "textlintrule"
   ],
-  "homepage": "https://github.com/textlint-ja/textlint-rule-ja-no-inappropriate-words#readme",
+  "homepage": "https://github.com/chris-resola/textlint-rule-ja-no-inappropriate-words#readme",
   "bugs": {
-    "url": "https://github.com/textlint-ja/textlint-rule-ja-no-inappropriate-words/issues"
+    "url": "https://github.com/chris-resola/textlint-rule-ja-no-inappropriate-words/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/textlint-ja/textlint-rule-ja-no-inappropriate-words.git"
-  },
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/hata6502"
+    "url": "git+https://github.com/chris-resola/textlint-rule-ja-no-inappropriate-words.git"
   },
   "license": "MIT",
-  "author": "Tomoyuki Hata <hato6502@gmail.com> (https://github.com/hata6502)",
+  "author": "Chris Lerus <c.michel@resola.ai> (https://github.com/chris-resola)",
   "main": "lib/index.js",
   "directories": {
     "test": "test"

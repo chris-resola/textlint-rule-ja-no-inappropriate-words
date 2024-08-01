@@ -3131,7 +3131,7 @@ const module: TextlintRuleModule = (context) => {
         const ruleError = new RuleError(
           `不適切表現「${surface_form}」が含まれています。`, {
              index: index,
-             fix: fixer.replaceTextRange([index, index + surface_form.length], "****")
+             fix: fixer.replaceTextRange([index, index + surface_form.length], "")
             },
         );
         report(node, ruleError);

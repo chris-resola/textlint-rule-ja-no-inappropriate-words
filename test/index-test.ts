@@ -15,7 +15,7 @@ tester.run('inappropriate-words-ja', rule, {
           column: 7,
           fix: {
             range: [6, 9],
-            text: '****'
+            text: ''
           }
         }
       ]
